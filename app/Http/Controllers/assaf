@@ -1,0 +1,26 @@
+use Carbon\Carbon;
+use App\Models\Ticket;
+use Illuminate\Http\Request;
+
+public function dashboard()
+{
+    // 🔹 Top 5 most frequently repaired equipment and their common issues
+    $topEquipments = Ticket::selectRaw("equipment_type, COUNT(*) as total, GROUP_CONCAT(problem SEPARATOR ', ') as issues")
+        ->groupBy('equipment_type')
+        ->orderByDesc('total')
+        ->limit(5)
+        ->get();
+
+    // 🔹 Most problematic Property ID (highest repairs)
+    $mostProblematicProperty = Ticket::selectRaw("propertyID, COUNT(*) as total")
+        ->whereNotNull('propertyID')
+        ->groupBy('propertyID')
+        ->orderByDesc('total')
+        ->first();
+
+    // 🔹 Number of tickets sent this month
+    $ticketsThisMonth = Ticket::whereMonth('created_at', Carbon::now()->month)
+        ->count();
+
+    return view('dashboard', compact('topEquipments', 'mostProblematicProperty', 'ticketsThisMonth'));
+}

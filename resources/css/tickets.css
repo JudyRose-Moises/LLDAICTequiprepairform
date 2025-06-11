@@ -1,0 +1,142 @@
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #2c3e50;
+            color: white;
+            position: fixed;
+            padding: 20px;
+            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h3 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #fff;
+            border-bottom: 2px solid #1a252f;
+            padding-bottom: 10px;
+        }
+        .nav-link {
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .nav-link i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        .nav-link:hover, .nav-link.active {
+            background: #1a252f;
+            transform: translateX(5px);
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .table {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .table th {
+            background: #3498db;
+            color: white;
+            padding: 1rem;
+            vertical-align: middle;
+        }
+        .table td {
+            padding: 1rem;
+            vertical-align: middle;
+        }
+        .table .badge {
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .table .badge:hover {
+            transform: scale(1.05);
+        }
+        .table .badge.bg-warning {
+            background: #ff9800;
+        }
+        .table .badge.bg-success {
+            background: #4CAF50;
+        }
+        .table .badge.bg-danger {
+            background: #f44336;
+        }
+        .table .badge.bg-info {
+            background: #2196F3;
+        }
+        .table .badge.bg-secondary {
+            background: #9E9E9E;
+        }
+        .table .badge.bg-primary {
+            background: #3498db;
+        }
+        .table .badge.bg-dark {
+            background: #2c3e50;
+        }
+        .table-responsive {
+            overflow-x: auto;
+            max-width: 100%;
+        }
+        .filter-section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .filter-section h3 {
+            margin: 0 0 15px 0;
+            color: #2c3e50;
+        }
+        .filter-section select {
+            width: 200px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-right: 10px;
+        }
+        .filter-section select:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+        .table tr:hover {
+            background-color: rgba(52, 152, 219, 0.05);
+        }
+        .table tr td a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .table tr td a:hover {
+            color: #3498db;
+        }
+        @media (max-width: 768px) {
+            .content {
+                margin-left: 0;
+                padding: 15px;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                box-shadow: none;
+            }
+            .filter-section select {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }

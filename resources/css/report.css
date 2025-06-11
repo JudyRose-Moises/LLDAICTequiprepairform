@@ -1,0 +1,149 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #2c3e50;
+    color: white;
+    position: fixed;
+    padding: 20px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    border-bottom: 2px solid #1a252f;
+    padding-bottom: 10px;
+}
+
+/* Navigation Styles */
+.nav-link {
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.nav-link:hover, .nav-link.active {
+    background: #1a252f;
+    transform: translateX(5px);
+}
+
+/* Content Styles */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+/* Form Styles */
+.form-check-inline {
+    margin-right: 15px;
+}
+
+.form-control {
+    max-width: 300px;
+    border-radius: 5px;
+    padding: 8px 12px;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Button Styles */
+.btn-primary {
+    background: #3498db;
+    border: none;
+    transition: 0.3s;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Section Styles */
+.maintenance-section {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.status-section {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+/* Other Styles */
+.other-input {
+    display: none;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+    .filter-section select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
