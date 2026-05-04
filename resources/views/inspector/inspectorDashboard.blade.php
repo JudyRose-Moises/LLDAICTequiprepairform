@@ -60,7 +60,7 @@
     <!-- Ticket Counters -->
     <div class="row d-flex flex-wrap">
         <div class="col-md-4">
-            <a class="no-underline" href="/admin/tickets">
+            <a class="no-underline" href="/inspector/tickets">
                 <div class="card bg-primary text-white shadow">
                     <div class="card-body">
                         <i class="fas fa-ticket-alt"></i>
@@ -71,7 +71,7 @@
             </a>
         </div>
         <div class="col-md-4">
-            <a class="no-underline" href="/admin/tickets">
+            <a class="no-underline" href="/inspector/tickets">
                 <div class="card bg-danger text-white shadow">
                     <div class="card-body">
                         <i class="fas fa-exclamation-circle"></i>
@@ -82,7 +82,7 @@
             </a>
         </div>
         <div class="col-md-4">
-            <a class="no-underline" href="/admin/tickets">
+            <a class="no-underline" href="/inspector/tickets">
                 <div class="card bg-success text-white shadow">
                     <div class="card-body">
                         <i class="fas fa-check-circle"></i>
@@ -153,7 +153,7 @@
         </div>
 
         <!-- Most Problematic Property ID -->
-        <div class="col-md-6">
+        <!-- <div class="col-md-6">
             <div class="card bg-warning text-dark shadow">
                 <div class="card-body text-center">
                     <h5><i class="fas fa-exclamation-triangle"></i> Most Problematic Property ID</h5>
@@ -167,7 +167,7 @@
                     @endif
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 

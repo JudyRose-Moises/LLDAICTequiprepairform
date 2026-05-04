@@ -33,16 +33,14 @@ return new class extends Migration
             $table->text('division')->nullable();
             $table->text('emp_number')->nullable();
             $table->text('propertyID')->nullable();
-            $table->varchar('rating')->nullable();
+            $table->text('rating')->nullable();
             $table->timestamp('assignDate')->nullable();
-            $table->tinyint('urgent')->default(0);
-            $table->varchar('review')->nullable();
-            $table->tinyint('accepted_by_user')->nullable();
-            $table->timestamp('auto_close_date')->nullable();
-            $table->varchar('for_acceptance')->nullable();
-            $table->varchar('decline_reason')->nullable();
-            $table->varchar('accountableUser')->nullable();
-            $table->varchar('users')->nullable();
+            $table->tinyInteger('urgent')->default(0);
+            $table->text('review')->nullable();
+            $table->text('for_acceptance')->nullable();
+            $table->text('decline_reason')->nullable();
+            $table->text('accountableUser')->nullable();
+            $table->text('users')->nullable();
         });
     }
 

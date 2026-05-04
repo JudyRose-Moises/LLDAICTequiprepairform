@@ -2,13 +2,13 @@
 <body>
     <!-- Sidebar -->
     <div class="sidebar">
-        <h3>{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}</h3>
+        <h3 style="text-align: left;">Employee: <br><small>{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}</small></h3>
         <ul class="nav flex-column">
             <li class="nav-item">
                 <a href="/dashboard" class="nav-link"><i class="fas fa-home"></i> Dashboard</a>
             </li>
             <li class="nav-item">
-                <a href="/hello" class="nav-link"><i class="fas fa-ticket"></i> Tickets</a>
+                <a href="/tickets" class="nav-link"><i class="fas fa-ticket"></i> Tickets</a>
             </li>
             <li class="nav-item">
                 <a href="/openticket" class="nav-link"><i class="fas fa-plus"></i> Open Ticket</a>

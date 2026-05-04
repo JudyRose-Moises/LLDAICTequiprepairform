@@ -35,16 +35,15 @@ class LoginController extends Controller
         return back()->withErrors(['emp_number' => 'These credentials do not match our records.'])->withInput($request->only('emp_number'));
     }
 
-    public function logout(Request $request)
-    {
-        Auth::logout();
+public function logout(Request $request)
+{
+    Auth::logout();
 
-        $request->session()->invalidate();
+    $request->session()->invalidate();
 
-        $request->session()->regenerateToken();
-
-        return redirect()->route('register');
-    }
+    $request->session()->regenerateToken();
+    return redirect()->route('login'); 
+}
 
     protected function authenticated(Request $request, $user)
     {

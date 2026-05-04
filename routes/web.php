@@ -15,7 +15,7 @@ Route::post('/', [LoginController::class, 'login']);
 Route::get('/openticket', [TicketController::class, 'openTicketForm'])->name('tickets.open');
 Route::post('/tickets/store', [TicketController::class, 'store'])->name('tickets.store');
 
-Route::get('/hello', [TicketController::class, 'index'])->name('tickets.index');
+Route::get('/tickets', [TicketController::class, 'index'])->name('tickets.index');
 
 Route::get('/tickets/{ticket}', [TicketController::class, 'show'])->name('tickets.show');
 Route::get('/tickets/{ticket}/edit', [TicketController::class, 'edit'])->name('tickets.edit');
@@ -36,11 +36,7 @@ Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
 Route::post('/register', [RegisterController::class, 'register']);
-Route::post('/logout', function () {
-    Auth::logout();
-    return redirect('/login');
-})->name('logout');
-
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::post('/tickets/{id}/accept', [TicketController::class, 'accept'])->name('tickets.accept');

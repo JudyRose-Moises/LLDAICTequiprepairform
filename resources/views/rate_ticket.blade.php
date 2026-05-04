@@ -12,7 +12,7 @@
         @include('layouts.userSidebar')
     </div>
 <div class="content">
-    <h2>Rate Service for Ticket #{{ $ticket->id }}</h2>
+    <h2>Rate Service for Ticket #{{ $ticket->custom_id }}</h2>
 
     <form action="{{ route('submitRating', $ticket->id) }}" method="POST">
     <div class="card">

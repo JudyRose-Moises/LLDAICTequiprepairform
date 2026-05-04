@@ -178,7 +178,7 @@ $updateData = [
     'repairDate' => now(),
     'noted' => $request->noted_by,
     'urgent' => '0',
-    'auto_close_date' => now()->addMinutes(1),
+    'auto_close_date' => now()->addDays(3),
 ];
 
 if ($deviceStatus === 'working' || $deviceStatus === 'nonworking') {

@@ -163,7 +163,7 @@
         </div>
 
         <!-- Most Problematic Property ID -->
-        <div class="col-md-6">
+        <!-- <div class="col-md-6">
             <div class="card bg-warning text-dark shadow">
                 <div class="card-body text-center">
                     <h5><i class="fas fa-exclamation-triangle"></i> Most Problematic Property ID</h5>
@@ -177,7 +177,7 @@
                     @endif
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 

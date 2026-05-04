@@ -15,6 +15,7 @@
                 <option value="closed">Closed</option>
                 <option value="working">Working</option>
                 <option value="nonworking">Nonworking</option>
+                <option value="forprocurement">For Procurement</option>
             </select></form>
         <input type="text" id="ticketSearch" class="form-control" placeholder="Search tickets...">
     </div>
@@ -33,6 +34,7 @@
                                 <strong>{{ $ticket->equipment_type }}</strong><br>                                
                                 <small>Ticket ID: {{ $ticket->custom_id }}</small><br>
                                 <small>Model: {{ $ticket->brand }}, SN: {{ $ticket->serialNum }}</small><br>
+                                <small>Property ID: {{ $ticket->propertyID }}</small><br>
                                 <small>Problem: {{ $ticket->problem }}</small><br>
                                 <small>Accessories: {{ $ticket->accessories }}</small><br>
                                 <small>Ticket Created: {{ $ticket->created_at->format('Y-m-d') }}</small><br>
