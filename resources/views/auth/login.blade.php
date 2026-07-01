@@ -156,6 +156,7 @@
         <div class="form-container">
             <div class="card">
                 <div class="header">{{ __('Login') }}</div>
+            <p>ICT Equipment Repair Form</p>
                 
                 @if ($errors->any())
                     <div class="alert">

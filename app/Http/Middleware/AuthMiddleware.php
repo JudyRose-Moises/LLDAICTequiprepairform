@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class AuthMiddleware
 {
-    public function handle(Request $request, Closure $next)
+    public x    function handle(Request $request, Closure $next)
     {
         if (!session()->has('user')) {
             return redirect()->route('login')->with('error', 'Please log in first.');
